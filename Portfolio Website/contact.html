@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Isha Shrestha">
+
+    <link rel="stylesheet" type="text/css" href="./contact.css">
+</head>
+<body>
+	<header>
+			<nav class="navbar" style="word-spacing: 30px;">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="blog.html">BLOG</a></li>					
+					<li><a href="cv.html">CV</a></li>			
+					<li><a href="research.html">RESEARCH</a></li>
+					<li class="active"><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+	</header>
+	<div class="body">
+		<div class="contact-section">
+		<h1>Get in touch</h1>
+<p>If you'd like to get in touch with me, send me a message below using the form below or via social media links on the bottom of the pages.</p>
+		
+				<form class="contact-form" action="contact.html" name="msgForm" onsubmit="validateForm()">
+					<h4>Name</h4>
+				    <input type="text" name="name" class="contact-form-text" placeholder="Enter your name">
+				    <h4>E-mail</h4>
+				    <input type="email" name="email" class="contact-form-text" placeholder="Enter your email">
+				    <h4>Phone</h4>
+				    <input type="text" name="phone" class="contact-form-text" placeholder="Enter your Phone Number">
+				    <h4>Message</h4>
+				    <textarea class="contact-form-text" name="message" placeholder="Enter your message"></textarea>
+				   	<a href=""><input type="submit" class="contact-form-btn" value="Send"></a>
+				</form>		
+
+	<footer> 
+		<div class = "footer">
+		<!--Creating a div for footer-->
+		<p style="color: #fff; font-family: Bahnschrift SemiBold; padding-top:40px;padding-left: 40%; letter-spacing: 1px;" >Follow me on:</p>
+			<!--Creating a div to add social media icons-->
+		<div class="icons">
+			<!--Creating an unordred list of social media icons-->
+			<div class="social-icons">
+			    <li><a href="https://www.facebook.com/"><img src="./Facebook_logo_(square).png"/></a></li>
+			    <li><a href="https://www.instagram.com/"><img src="instagram-logo.png"/></a></li>
+			    <li><a href="https://www.snapchat.com/"><img src="Snapchat_logo-1024x538.jpeg"/></a></li>
+			</div>
+		</div>
+		<p style="color: #fff; font-family: Bahnschrift SemiBold; padding-left: 42%; letter-spacing: 1px;" >Thank you for visiting.</p>
+		<p style="color: #fff; font-family: Bahnschrift SemiBold; padding-top:20px; padding-left: 35%; letter-spacing: 1px;" >&copy; Copyright 2021 Isha Shrestha. All rights reserved</p>
+	</div>
+	</footer>	
+<script type="text/javascript">
+	function validateForm() {
+				var name = document.forms["msgForm"]["name"].value;
+				var email = document.forms["msgForm"]["email"].value;
+				var phone = document.forms["msgForm"]["phone"].value;
+				var message = document.forms["msgForm"]["message"].value;
+
+				if (name == "" || email == "" || phone == "" || message == ""){
+					alert("Please don't leave any field empty.");
+				}
+				else {
+					alert("Thank you for reaching out to me.\n Will contact you back as soon as possible.");
+				}
+			}
+</script>
+</body>
+</html>

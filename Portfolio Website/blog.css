@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Adding CSS to body section */
+body{
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll; 
+ 	overflow-x:hidden; /*removes unnecessary white space on right side of page*/
+}
+
+header{
+	width: 100%;	
+	height: 55px;
+	background-color: #1E1E1E;
+	overflow: none;
+} 
+.navbar ul{
+	width: 100%;
+	height: 55px;
+	padding-top: 5.5px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.navbar ul li{
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	font-family: Bahnschrift SemiBold;
+	font-size: 17px;
+	color: grey;
+	padding: 10px 23px;
+}
+
+.navbar ul li a:hover{
+	color: white;
+	padding: 15px 23px;
+	border-bottom: 4px solid #fff;
+	border-radius: 1px;
+	transition: 0.4s;
+}
+
+.navbar ul li.active a{
+	color: white;
+	padding: 15px 23px;
+	border-bottom: 4px solid #fff;
+	border-radius: 1px;
+}
+
+
+.body{
+	padding-top: 20px; 
+	background-color: grey;
+	width: 100%;
+	height: 1700px;
+	background-size: cover;
+	background-position: center;
+	overflow: none;
+}
+
+
+.sin-blog{
+	box-shadow: 0 0 8px 3px #000;
+	width: 150%;
+	padding: 12px;
+	margin-top: 30px;
+	background-color: lightgrey;
+	border-radius: 8px;
+}
+
+.sin-blog img{
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+}
+
+.b-meta{
+	font-size: 15px;
+	margin-bottom: 2px;
+	font-family: Bahnschrift SemiBold;
+}
+
+.sin-blog span{
+	float: right;
+	font-size: 13px;
+	color: cornflowerblue;
+	font-family: Bahnschrift SemiBold;
+}
+
+.b-text{
+	font-size: 14px;
+	text-align: justify;
+	font-family: Bahnschrift SemiBold;
+}
+.sin-blog h2{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #007bff;
+	font-family: Bahnschrift SemiBold;
+}
+
+.sin-blog h2 a{
+	text-decoration: none;
+	font-family: Bahnschrift SemiBold;
+}
+
+.rm-btn{
+	background-image: linear-gradient(to right, #1c03b5, #5c8bef);
+	padding: 5px 12px 8px;
+	border-radius: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+	border:none!important;
+}
+
+.rm-btn:hover{
+	background-image: linear-gradient(to right, #006417, #00b128);
+	text-decoration: none;
+	color: #fff;
+}
+
+footer{
+	width: 100%;	
+	height: 270px;
+	background-color: #1E1E1E;
+	overflow: none;
+} 
+
+/*Adding CSS to footer section */
+.footer{
+	bottom: 0;
+	border-top: 1.5px #fff solid;
+  	width: 100%;
+  	height: 220px;
+  	background-color: #1E1E1E;
+  	overflow: none; 
+}
+
+/*styling div for adding social Media icons.*/
+.icons{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/*Displaying list in a line and setting its width and height.*/
+.social-icons li{
+	width:auto;
+  	height: 50px;
+  	margin: 1.2px;
+  	display: inline-block;
+}
+
+/*Styling image of the social media icons.*/
+.social-icons li img {
+  	width:40px;
+  	height:40px;
+  	border-radius: 25%;
+}
+
+/*Styling social media icons on hover.*/
+.social-icons li img:hover {
+	transition: 0.2s ease;
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}

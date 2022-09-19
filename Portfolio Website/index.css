@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Adding CSS to body section */
+body{
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll; 
+ 	overflow-x:hidden; /*removes unnecessary white space on right side of page*/
+}
+
+header{
+	width: 100%;	
+	height: 55px;
+	background-color: #1E1E1E;
+	overflow: none;
+	position: fixed;
+	top: 0;
+} 
+
+.navbar ul{
+	width: 100%;
+	height: auto;
+	padding-top: 18px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.navbar ul li{
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	font-family:Bahnschrift SemiBold;
+	font-size: 17px;
+	font-weight: bold;
+	color: grey;
+	padding: 15px 23px;
+}
+
+.navbar ul li a:hover{
+	color: white;
+	padding: 15px 23px;
+	border-bottom: 4px solid #fff;
+	border-radius: 1px;
+	transition: 0.4s;
+}
+
+.navbar ul li.active a{
+	color: white;
+	padding: 15px 23px;
+	border-bottom: 4px solid #fff;
+	border-radius: 1px;
+}
+
+
+.body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../background.jpg);
+	height: 800px;
+	background-size: cover;
+	background-position: center;
+	overflow: none;
+}
+
+.body img{
+	width: 400px;
+	height: 530px;
+	margin-top: -22%;
+	margin-left: 12%;
+	border-radius: 50%;
+}
+
+.me{
+	margin-top: -3%;
+	margin-left: 20%;
+}
+
+.body h1{
+	font-size: 70px;
+	font-family: Segoe Script;
+	color: #fff;
+	text-align: center;
+}
+
+.body h2{
+	font-size:17px; 
+	font-family: Bahnschrift SemiBold;
+    color: #fff; 
+	text-align: center; 
+	padding-left:100px;
+}
+
+.division{
+	width: 100%;
+	height: 250px;
+	margin-top: -12%;
+	margin-left: 25%;
+}
+
+.division a{
+	text-decoration: none;
+}
+
+.division > .blog{
+	width: 120px;
+	height: 120px;
+	background:rgba(100,100,100,0.5);
+	border-radius: 50%;
+	margin-left: 15%;
+}
+
+.division > .cv{
+	width: 120px;
+	height: 120px;
+	background:rgba(100,100,100,0.5);
+	border-radius: 50%;
+	margin-left: 25%;
+	margin-top: -8.9%;
+}
+
+.division > .research{
+	width: 120px;
+	height: 120px;
+	background:rgba(100,100,100,0.5);
+	border-radius: 50%;
+	margin-left: 35%;
+	margin-top: -8.9%;
+}
+
+.division > .contact{
+	width: 120px;
+	height: 120px;
+	background:rgba(100,100,100,0.5);
+	border-radius: 50%;
+	margin-left: 45%;
+	margin-top: -8.9%;
+}
+
+/*Adding CSS to footer section */
+.footer{
+	border-top: 1.5px #fff solid;
+  	width: 100%;
+  	height: 210px;
+  	background-color: #1E1E1E;
+  	overflow: none; 
+}
+
+/*styling div for adding social Media icons.*/
+.icons{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/*Displaying list in a line and setting its width and height.*/
+.social-icons li{
+	width:auto;
+  	height: 50px;
+  	margin: 1.2px;
+  	display: inline-block;
+}
+
+/*Styling image of the social media icons.*/
+.social-icons li img {
+  	width:40px;
+  	height:40px;
+  	border-radius: 25%;
+}
+
+/*Styling social media icons on hover.*/
+.social-icons li img:hover {
+	transition: 0.2s ease;
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}
+
